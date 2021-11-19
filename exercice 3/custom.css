@@ -1,0 +1,57 @@
+#logo_image {
+  height: 10%;
+  margin: auto 0;
+}
+
+body {
+  margin: 0;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+header {
+  background-color: #222222;
+  display: flex;
+  justify-content: space-around;
+}
+li {
+  color: #999a97;
+  margin-left: 20px;
+}
+
+#back-im {
+  background-image: url("./hero-image.png");
+  height: 650px;
+  background-size: cover;
+  text-align: center;
+}
+.part1_title {
+  color: white;
+  font-size: 56px;
+  margin: 0px;
+}
+.part1_p {
+  text-align: center;
+  font-size: 21px;
+  color: white;
+  width: 60%;
+}
+.btn_danger {
+  background-color: #d9534f;
+
+  border-color: #d43f3a;
+  color: #ffffff;
+  width: 250px;
+  height: 80px;
+  border-radius: 10px;
+}
+#who {
+  text-align: center;
+  margin-top: 70px;
+}
+#learn_more {
+  font-size: 36px;
+}
