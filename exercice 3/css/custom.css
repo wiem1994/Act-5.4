@@ -6,6 +6,7 @@
 body {
   margin: 0;
 }
+
 ul {
   display: flex;
   flex-direction: row;
@@ -15,43 +16,197 @@ ul {
 header {
   background-color: #222222;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding : 0px 100px;
 }
 li {
   color: #999a97;
   margin-left: 20px;
 }
 
-#back-im {
+.jumbotron {
+  font-family: 'Arvo', courier, serif;
   background-image: url("./hero-image.png");
   height: 650px;
   background-size: cover;
   text-align: center;
+  color:white;
+  text-align: center;
+  padding-top:50px;
 }
-.part1_title {
-  color: white;
-  font-size: 56px;
+.jumbotron h1 { 
   margin: 0px;
 }
-.part1_p {
-  text-align: center;
+.jumbotron p {
   font-size: 21px;
-  color: white;
-  width: 60%;
+  padding: 0px 180px;
+  margin-top:60px;
 }
-.btn_danger {
+.jumbotron button  {
   background-color: #d9534f;
-
   border-color: #d43f3a;
   color: #ffffff;
-  width: 250px;
+  width: 300px;
   height: 80px;
+  font-weight:500;
   border-radius: 10px;
+  font-size: 30px;
+  font-family: 'Arvo', courier, serif;
 }
-#who {
+.jumbotron img{
+  margin-top: 30px;
+}
+.homepage {
+	text-align: center;
+	padding-top: 30px;
+}
+.homepage h2, .homepage h3 {
+	color: #e74c3c;
+	font-family: 'Arvo', courier, serif;
+}
+.homepage h2 {
+	font-size: 30px;
+}
+.homepage h3 {
+	font-size: 26px;
+}
+.homepage p {
+	font-size: 21px;
+	font-weight: 300;
+  padding : 0px 70px;
+}
+.homepage a {
+	color: #e74c3c;
+  text-decoration: none;
+}
+.homepage hr {
+	border-top: 1px solid #e74c3c;
+	width: 160px;
+	margin-top: 15px;
+}
+footer {
+	background-color: #f74c3c;
+	padding-top: 150px;
+  padding-left:100px;
+	padding-bottom: 30px;
+  padding-right:100px;
+}
+#get-involved {
+	background-color: #f5f5f5;
+}
+#start_learning{
+  margin:0px;
+  padding-bottom: 20px;
+}
+
+.btn-default{
+  background-color: white;
+  padding:10px;
+  border: solid 1px;
+  border-radius: 5px;
+  border-color: #cccccc;
+}
+#back-to-top ul {
+  display:flex;
+  justify-content: space-between;
+}
+#back-to-top i{
+  background-color: #333333;
+  width:40px;
+  height:40px;
+  border-radius: 50%;
   text-align: center;
-  margin-top: 70px;
 }
-#learn_more {
-  font-size: 36px;
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.jumbotron h1 {
+		font-size: 56px;
+		margin-bottom: 30px;
+	}
+  .three_rows{
+    display:flex;
+    justify-content: center;
+  }
+  .display_mobile{
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.jumbotron h1 {
+		font-size: 30px;
+	}
+	.jumbotron p {
+		padding: 0px;
+	}
+	#get-involved .col-md-4 {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+  .three_rows{
+    display:flex;
+    flex-direction: column;
+    row-gap:60px;
+  }
+  #back-to-top img{
+    width:500px;
+  }
+  #back-to-top ul{
+    padding-left:0;
+  }
+  footer{
+    padding-left:0;
+  }
+  
+  .display_web{
+    display: none;
+  }
+  /* .display_mobile{
+    display: flex;
+  } */
+  .btn-default{
+    height:50px;
+  }
+  
+}
+@media (min-width: 320px) and (max-width: 767px) {
+	.jumbotron h1 {
+		font-size: 24px;
+	}
+	.jumbotron p {
+		font-size: 16px;
+		padding: 0px 50px;
+	}
+	.btn-lg {
+		font-size: 18px;
+	}
+	footer img {
+		width: 80%;
+	}
+	.homepage p {
+		font-size: 18px;
+	}
+ footer { padding-right :0px; padding-left: 0px;}
+  .jumbotron{height:460px;}
+  .homepage p {
+    padding : 0px 10px;
+  }
+  #header_part{
+    padding: 0px;
+  }
+  .jumbotron button  {
+    width: 120px;
+    height: 40px;
+    font-weight:500;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: 'Arvo', courier, serif;
+  }
+  .jumbotron p {
+    margin-top:20px;
+  }
+  .display_web{
+    display: none;
+  }
+  #get-involved{ height : 1150px;}
+  #header_part{ padding: 0 20px;}
 }
